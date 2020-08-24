@@ -1,0 +1,482 @@
+/* Hidden for smaller screen */
+@media only screen and (max-width: 1200px) {
+    .body{
+        background: white;
+    }
+  .container1{
+    display: none;
+  }
+
+  .container2 {
+      position: fixed;
+      background-image: url("../assets/404.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      color: #4b55cb;
+      text-align: center;
+      padding-top: 35%;
+      
+     
+  }
+
+  .text-404 {
+      display: block;
+      font-size: 20px;
+      padding: 5%;
+      margin-left: 10%;
+      width: 70%;
+      
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+.text-404{
+    display: none;
+}
+}
+
+
+
+/* ANIMATIONS */
+@keyframes sun {
+   to {
+     motion-offset: 100%;
+     offset-distance: 100%;
+   }
+}
+
+@keyframes cloud {
+   to {
+    margin-left: 150%;
+   }
+}
+
+@keyframes scene-load {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+
+@keyframes preloader {
+    to {
+        top: -900px;
+        display: none;
+    }
+}
+
+@keyframes preloader2 {
+    to {
+        height: 0px;
+    }
+}
+
+
+
+
+
+/* general styling ********************************************************************************** */
+body, html {
+  height: 100%;
+  background: #e2856a;
+  animation: scene-load 1.5s linear;
+  animation-fill-mode: forwards;
+
+}
+
+a:link { text-decoration: none; color: white;}
+a:visited { text-decoration: none; color: white;}
+a:hover { text-decoration: none; color: rgb(255, 102, 0);}
+a:active { text-decoration: none; color: rgb(80, 25, 0);}
+
+.hide {
+    opacity: 0;
+}
+
+
+/* container 1 ==================================================================== */
+
+/* preloader */
+.preloader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    top: 0px;
+    text-align: center;
+    overflow: hidden;
+    
+    animation: preloader 1.5s linear 3s;
+    animation-fill-mode: forwards;
+}
+.preloader2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:  white;
+    top: 0px;
+
+    
+    animation: preloader2 3s linear;
+    animation-fill-mode: forwards;
+    
+}
+
+.img-preloader {
+    position: relative;
+    top: 100px;
+    height: 30% ;
+    width: 20%;
+    margin: auto;
+    display: block;
+    opacity: 0.8;
+}
+/* logos */
+
+.logo-container{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 10px 10px -8px grey;
+    position: fixed;
+    left: -100px;
+    top: 10px;
+    
+    animation: rotate 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.logo {
+    position: relative;
+    top: -50px;
+    left: 30px;
+    height: 100px;
+    width: 130px;
+}
+
+.logo2 {
+    height: 50px;
+    width: 70px;
+    margin: 10px auto 10px;
+    display: block;
+
+}
+
+.container1 {
+    /* background: linear-gradient(to top, #fff8cf 60%, #e6876e); */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+
+ 
+}
+
+/* nav bar */
+
+.nav-bar {
+   color: white;
+   word-spacing: 30px;
+   font-size: 15px;
+   text-align: right;
+   position: relative;
+   top: -140px;
+   margin-left:75%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding: 10px;
+   max-width: 300px;
+   
+}
+
+
+
+
+
+/* clouds */
+.cloud {
+    opacity: 0.5;
+    height: 100px;
+    width: 130px;
+    top: 150px;
+    left: -100px;
+    position: absolute;
+   animation: cloud 20s linear infinite;
+  animation-fill-mode: forwards;
+}
+.cloud2 {
+    
+    height: 100px;
+    width: 130px;
+    top: 90px;
+    left: -100px;
+    position: absolute;
+   animation: cloud 15s linear infinite;
+  animation-fill-mode: forwards;
+  animation-delay: -2s;
+}
+
+
+/* sun  */
+.sun {
+    offset-path: path('M 0 0 Q 100 -100 230 -100 ');
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+    
+  animation: sun 1.5s linear;
+  animation-fill-mode: forwards;
+}
+
+/* moon  */
+.moon {
+    offset-path: path('M 200 0 Q 200 -100 230 -300 ');
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+    display: none;
+    transform: rotate(90deg);
+
+}
+
+.star {
+   
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    opacity: 0;
+    /* background-color: white; */
+    
+}
+
+.stars {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    opacity: 0;
+    
+}
+
+
+
+
+/* building */
+.building1 {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0px;
+    
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0px;
+   opacity: 0  ;
+     
+}
+
+.building2 {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0px;
+    
+    /* top: 150%; */
+}
+
+.billboard {
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    bottom: 300px;
+    display: none;
+   background: none !important;
+   
+}
+
+
+/*  content */
+.first-area {
+   
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(21, 2, 71);
+    margin-top: 150%;
+
+    color: white;
+    text-align: center;
+    
+}
+
+/* section1 ===================== */
+
+.first-area-section1 {
+    background-image: url("../assets/background1.png");
+    height: 60%;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.text1 {
+    font-size: 40px;
+    opacity: 0;
+    position: absolute;
+    left: 40%;
+    
+}
+
+.text2 {
+    font-size: 17px;
+    opacity: 0;
+    position: absolute;
+    top: 70px;
+    left: 42%;
+    color: rgb(0, 196, 196);
+}
+
+
+
+/* buildings */
+.section1-building1 {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    top: -10px;
+    display: block;
+    margin: auto;
+
+}
+
+.section1-building2 {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 300px;
+    left: 60%;
+
+    
+}
+
+.section1-building3 {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 300px;
+    left: 10%;
+}
+
+.button {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: white;
+    color: teal;
+    border-radius: 20px;
+    top: 250px;
+    left: 25%;
+    display: none;
+    box-shadow: 0px 0px 40px rgb(0, 217, 255);
+    
+}
+.button2 {
+    left: 47%;
+}
+.button3 {
+    left: 70%;
+}
+
+.pointer {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 250px;
+    left: 20%;
+    
+    
+}
+div.pointer:hover + .button{
+    display: block;
+}
+
+.pointer2 {
+    left: 42%;
+}
+div.pointer2:hover + .button{
+    display: block;
+}
+
+.pointer3 {
+    left: 65%;
+}
+div.pointer3:hover + .button{
+    display: block;
+}
+
+
+/* section2 ===================== */
+
+.first-area-section2 {
+    background-image: url("../assets/background2.png");
+    height: 60%;
+    padding: 20px;
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.enso {
+    height: 600px;
+    width: 850px;
+    position: absolute;
+    right: -1300px;
+    
+}
+
+.text3 {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    left: 40px;
+    opacity: 0;
+    
+}
+
+
+/* section 3 ================ */
+
+.first-area-section3 {
+    background: rgb(0, 0, 19);
+    height: 100%;
+    color: white;
+}
+
+/* container 2 ====================================================================*/
+
+ .container2 {
+    height: 16000px;
+    
+}
+
+
+
+
