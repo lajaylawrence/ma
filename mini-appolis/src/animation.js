@@ -9,7 +9,7 @@ let tl = gsap.timeline({
         trigger: ".container1",
         start: "0px 0%", 
         endTrigger: ".container3", 
-        // markers: true,
+        markers: false,
         scrub: true, 
         pin: true, 
         pinSpacing: false, 
@@ -120,7 +120,7 @@ let tl2 = gsap.timeline({
         trigger: ".container2",
         start: "10000px 0%",
         endTrigger: ".container3",
-        
+        markers: false,
         pinSpacing: false,
         
 
@@ -145,7 +145,7 @@ let tl3 = gsap.timeline({
         trigger: ".container2",
         start: "12000px 0%",
         endTrigger: ".container3",
-        
+        markers: false,
         pinSpacing: false,
         
 

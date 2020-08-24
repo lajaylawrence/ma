@@ -74,6 +74,7 @@ to {
 @keyframes preloader2 {
     to {
         height: 0px;
+        display: none;
     }
 }
 
