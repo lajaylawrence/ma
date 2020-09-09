@@ -1,2 +1,3 @@
 # ANIMATED WEBSITE
-made with GSAP plugins and scrollTrigger
+Made with GSAP plugins and scrollTrigger
+view here: https://lajaylawrence.github.io/mini-appolis/mini-appolis/
